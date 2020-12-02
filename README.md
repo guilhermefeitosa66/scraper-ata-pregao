@@ -9,10 +9,10 @@ http://comprasnet.gov.br/livre/pregao/AtaEletronico.asp?co_no_uasg=158959&&uasg=
 
 ## 1) Instalação do Ruby
 ```
-$ sudo apt install ruby
+$ sudo apt install ruby git curl
 ```
 
-Ou instale o Ruby pelo RVM
+Ou instale o Ruby através do RVM
 
 ```
 $ sudo apt install git curl
@@ -24,7 +24,13 @@ $ rvm install 2.7.2
 $ rvm use 2.7.2 --default
 ```
 
-## 2) dentro da pasta **scrap-ata/** esse comando para instalar as dependencias:
+## 2) Clone o repositório e entre na pasta que contem o script
+```
+$ git clone https://github.com/guilhermefeitosa66/scraper-ata-pregao.git scrap-ata
+$ cd scrap-ata
+```
+
+## 3) Dentro da pasta **scrap-ata/** instale as dependencias:
 ```
 $ bundle install
 ```
@@ -37,9 +43,9 @@ $ gem install bundler
 $ bundle install
 ```
 
-## 3) Salve a página da Ata de Pregão Eletrônico dentro da pasta **scrap-ata/** com o nome **ata.html**
+## 4) Salve a página da Ata de Pregão Eletrônico dentro da pasta **scrap-ata/** com o nome **ata.html**
 
-## 4) Para gerar a planilha execute o script **scraper.rb**:
+## 5) Para gerar a planilha execute o script **scraper.rb**:
 ```
 $ ruby scraper.rb
 ```
